@@ -1,0 +1,24 @@
+package com.tanglin;
+
+import java.util.Scanner;
+
+public class feibolaqi {
+
+	public static void main(String[] args) {
+	    System.out.println("ÇëÊäÈëÕûÊın£º");
+	    Scanner s=new Scanner(System.in);
+	    int n=s.nextInt();
+	    int []fib=new int [n+1];
+	    fib[0]=0;
+	    fib[1]=1;
+	    int i=2;
+	    while(i<=n){
+	    	fib[i]=fib[i-1]+fib[i-2];
+	    	i++;
+	    }
+	    for(int a=0;a<=n;a++){
+	    	System.out.print (fib[a]);
+	        System.out.print("");
+	    }
+	}
+}
