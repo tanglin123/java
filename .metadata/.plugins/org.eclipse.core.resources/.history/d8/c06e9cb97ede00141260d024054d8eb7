@@ -1,0 +1,46 @@
+package ja;
+
+public class lei {
+	int age;
+	String name;
+	String gender;
+	
+	public lei(String _name,int _age,String _gender){
+		age = _age;
+		name = _name;
+		gender= _gender;
+	}
+	
+	public String getName(){
+		return name;
+	}
+	public int getAge(){
+		return age;
+	}
+	public String getgender(){
+		return gender;
+	}
+	
+	public boolean canMarry(){
+		if(age>=22&&gender=="ÄÐ"){
+			if(gender=="Å®"&&age>=20)
+			return(true);
+	
+		}
+		return false;
+	}
+
+	public static void main(String[] args) {
+		lei xiaoming = new lei("xiaoming",17,"Å®");
+		System.out.println("Age:"+xiaoming.getAge());
+		System.out.println("name:"+xiaoming.getName());
+		System.out.println("gender:"+xiaoming.getgender());
+		if(xiaoming.canMarry()){
+			System.out.println("I can marry!");
+		}
+		else{
+			System.out.println("I cannot marry!");
+		}
+	}
+
+}

@@ -1,0 +1,54 @@
+package ja;
+
+public class lei {
+	int age;
+	String name;
+	String gender;
+	private float height;
+	
+	public lei(String _name,int _age,String _gender,float _height){
+		age = _age;
+		name = _name;
+		gender= _gender;
+		height= _height;
+	}
+	
+	public String getName(){
+		return name;
+	}
+	public int getAge(){
+		return age;
+	}
+	public String getgender(){
+		return gender;
+	}
+	public float getheight(){
+	    return height;
+	}
+	
+	public boolean canMarry(){
+		if(age>=22&&gender=="ÄĞ"){
+			return(true);
+		}
+		if(gender=="Å®"&&age>=20){
+			return(true);
+	
+		}
+		return false;
+	}
+
+	public static void main(String[] args) {
+		lei tanglin = new lei("tanglin",25,"Å®",168);
+		System.out.println("Age:"+tanglin.getAge());
+		System.out.println("name:"+tanglin.getName());
+		System.out.println("gender:"+tanglin.getgender());
+		System.out.println("height:"+tanglin.getheight());
+		if(tanglin.canMarry()){
+			System.out.println("I can marry!");
+		}
+		else{
+			System.out.println("I cannot marry!");
+		}
+	}
+
+}

@@ -1,0 +1,29 @@
+package ja;
+
+public class lei {
+	int age;
+	String name;
+	String gender;
+	
+	public lei(String _name,int _age,String _gender){
+		age = _age;
+		name = _name;
+		gender= _gender;
+	}
+	
+	public String getName(){
+		return name;
+	}
+	public int getAge(){
+		return age;
+	}
+	public String getgender(){
+		return gender;
+	}
+
+	public static void main(String[] args) {
+		lei xiaoming = new lei("xiaoming",24,"ÄĞ");
+		System.out.println("Age:"+xiaoming.getAge());
+	}
+
+}
